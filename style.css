@@ -1,0 +1,108 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 100vh;
+  font-family: "VT323", monospace;
+}
+
+body,
+.snake {
+  background-color: #414141;
+}
+
+.snake {
+  border: #5a5a5a 1px dotted;
+}
+
+.food {
+  background-color: #dedede;
+  border: #999 5px solid;
+}
+
+/* NavBar */
+.navBar {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  gap: 15px;
+  bottom: 30%;
+
+  h1 {
+    color: #abb78a;
+  }
+}
+
+#logo {
+  height: 65px;
+  width: 65px;
+  border-radius: 300px;
+  border: #abb78a solid 5px;
+}
+
+/* game board */
+.game-border-1 {
+  border: #595f43 solid 10px;
+  border-radius: 30px;
+  box-shadow: inset 0 0 0 10px #595f43;
+
+  .game-border-2 {
+    border: #abb78a solid 8px;
+    border-radius: 26px;
+    box-shadow: inset 0 0 0 10px #abb78a;
+  }
+
+  .game-border-3 {
+    border: #8b966c solid 30px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 5px #8b966c;
+    background-color: #c4cfa3;
+  }
+
+  #game-board {
+    border-radius: 100px;
+    display: grid;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows: repeat(20, 20px);
+    margin: 5px;
+  }
+}
+
+#dashboard {
+  position: absolute;
+}
+
+/* instructions */
+#instruction-text {
+  position: absolute;
+  width: 300px;
+  top: 60%;
+  color: #333;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 30px;
+}
+
+/* scores */
+.scores {
+  display: flex;
+  justify-content: space-between;
+
+  #score {
+    color: #abb78a;
+  }
+
+  #highScore {
+    color: #d8ddca;
+    display: none;
+  }
+
+  #score,
+  #highScore {
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 0 10px;
+  }
+}
